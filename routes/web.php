@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('api/v1/categorias', 'CategoriasController@index');
+Route::get('api/v1/juegos/{id}', 'JuegosController@show');
